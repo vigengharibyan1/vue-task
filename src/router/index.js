@@ -14,12 +14,12 @@ const routes = [
   {
     path: "/todo",
     name: "TodoList",
-    component: () => import(/* webpackChunkName: "about" */ "../views/Todo/List.vue")
+    component: () => import(/* webpackChunkName: "Todo/List" */ "../views/Todo/List.vue")
   },
   {
     path: "/todo/:index",
     name: "Todo",
-    component: () => import(/* webpackChunkName: "about" */ "../views/Todo/View.vue")
+    component: () => import(/* webpackChunkName: "Todo/View" */ "../views/Todo/View.vue")
   },
   {
     path: "/about",

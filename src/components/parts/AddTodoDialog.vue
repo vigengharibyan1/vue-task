@@ -92,7 +92,6 @@
          submit() {
            if(this.valid) {
               this.$store.dispatch('todo/add', {...this.todo}).then((res) => {
-                 console.log(res);
                  if(res.success) this.closeDialog();
               });
            }
